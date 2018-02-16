@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recipe_card">100dp</dimen>
+    <dimen name="header_bottom">50dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="category_list_width">200dp</dimen>
+    <dimen name="margin_b_recipes">10dp</dimen>
+    <dimen name="height_zero">0dp</dimen>
+    <dimen name="width_zero">0dp</dimen>
+    <dimen name="margin_end_title">10dp</dimen>
+    <dimen name="padding_L_content">5dp</dimen>
+    <dimen name="title_margin_s">10dp</dimen>
+    <dimen name="title_margin_t">10dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="category_margin_s">12dp</dimen>
+    <dimen name="serving_size_margin_e">10dp</dimen>
+    <dimen name="ingredients_margin_t">15dp</dimen>
+    <dimen name="information_status_height">40dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="medium_margin">20dp</dimen>
+    <dimen name="large_margin">40dp</dimen>
+    <dimen name="xlarge_margin">60dp</dimen>
+    <dimen name="btn_txtsize">10sp</dimen>
+    <dimen name="constraint_height">700dp</dimen>
+    <dimen name="spinner_padding">1dp</dimen>
+    <dimen name="settings_topMarginA">47dp</dimen>
+    <dimen name="settings_leftMarginD">38dp</dimen>
+    <dimen name="settings_leftMarginF">36dp</dimen>
+    <dimen name="settings_bottomMarginB">48dp</dimen>
+    <dimen name="settings_bottomMarginC">30dp</dimen>
+    <dimen name="settings_tv_widthE">235dp</dimen>
+    <dimen name="settings_tv_widthA">55dp</dimen>
+    <dimen name="settings_tv_heightA">30dp</dimen>
+</resources>

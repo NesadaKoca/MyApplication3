@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginStart="@dimen/title_margin_s"
+        android:layout_marginTop="@dimen/title_margin_t"
+        app:layout_constraintBottom_toTopOf="@id/serving_size"
+        app:layout_constraintEnd_toStartOf="@id/category"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/title" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/category"
+        style="@style/EditTextStyle"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginEnd="@dimen/title_margin_s"
+        android:layout_marginStart="@dimen/category_margin_s"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/spinnerItems"
+            android:gravity="center"
+            android:padding="@dimen/spinner_padding" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/serving_size"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/ingredients_margin_t"
+        app:layout_constraintBottom_toTopOf="@id/ingredients"
+        app:layout_constraintEnd_toEndOf="@id/category"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_weight="1">
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/serving_size" />
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:id="@+id/ingredients"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/ingredients_margin_t"
+        app:layout_constraintBottom_toTopOf="@id/preparation"
+        app:layout_constraintEnd_toEndOf="@id/category"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/serving_size"
+        app:layout_constraintVertical_weight="3">
+
+        <EditText
+            android:id="@+id/ingred"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/ingredients" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/preparation"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/ingredients_margin_t"
+        app:layout_constraintBottom_toTopOf="@id/notes"
+        app:layout_constraintEnd_toEndOf="@id/category"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/ingredients"
+        app:layout_constraintVertical_weight="3">
+
+        <EditText
+            android:id="@+id/prep"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/preparation" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/notes"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/ingredients_margin_t"
+        app:layout_constraintBottom_toTopOf="@id/upload_recipe_button_container"
+        app:layout_constraintEnd_toEndOf="@id/category"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/preparation"
+        app:layout_constraintVertical_weight="3">
+
+        <EditText
+            android:id="@+id/note"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/notes" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/upload_recipe_button_container"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/category"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/notes">
+
+        <Button
+            android:id="@+id/upload_recipe_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/btn_text"
+            android:textSize="@dimen/btn_txtsize" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
