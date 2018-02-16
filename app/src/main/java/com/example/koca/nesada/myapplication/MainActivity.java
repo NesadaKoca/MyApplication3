@@ -35,25 +35,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
-    public void ingredientClick(View view) {
-
-        TransitionManager.beginDelayedTransition(constraintLayout);
-        constraintSet2.applyTo(constraintLayout);
-    }
-
-    public void onResetClick(View view) {
-        TransitionManager.beginDelayedTransition(constraintLayout);
-        constraintSet1.applyTo(constraintLayout);
-
-    }
-
     @Override
     public void onBackPressed() {
 
         TransitionManager.beginDelayedTransition(constraintLayout);
         constraintSet1.applyTo(constraintLayout);
         //super.onBackPressed();
+
+
+        etIngred.setVisibility(View.VISIBLE);
+        etPrep.setVisibility(View.VISIBLE);
+        etNote.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -62,9 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TransitionManager.beginDelayedTransition(constraintLayout);
         constraintSet2.applyTo(constraintLayout);
 
-        etIngred.setVisibility(View.VISIBLE);
-       etPrep.setVisibility(View.VISIBLE);
-        etNote.setVisibility(View.VISIBLE);
+        etIngred.setVisibility(View.INVISIBLE);
+       etPrep.setVisibility(View.INVISIBLE);
+        etNote.setVisibility(View.INVISIBLE);
 
         if(view.getId() == etIngred.getId()){
             etIngred.setVisibility(View.VISIBLE);

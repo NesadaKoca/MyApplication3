@@ -75,7 +75,6 @@
     </FrameLayout>
 
     <FrameLayout
-        android:onClick="ingredientClick"
         android:id="@+id/ingredients"
         android:layout_width="@dimen/zero_dp"
         android:layout_height="@dimen/zero_dp"
@@ -88,7 +87,6 @@
         >
 
         <EditText
-            android:onClick="ingredientClick"
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -107,7 +105,7 @@
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/ingredients"
         app:layout_constraintVertical_weight="3"
-        android:visibility="invisible">
+        >
 
         <EditText
             style="@style/EditTextStyle"
@@ -128,7 +126,7 @@
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/preparation"
         app:layout_constraintVertical_weight="3"
-        android:visibility="invisible">
+        >
 
         <EditText
             style="@style/EditTextStyle"
